@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-    base: '/BMP_LP2/',
+    base: process.env.VERCEL ? '/' : '/BMP_LP2/',
 })
