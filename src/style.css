@@ -178,11 +178,22 @@ ul {
 }
 
 .hero-quote {
-  font-size: 1.5rem;
-  font-style: italic;
-  color: var(--color-text-dark);
-  margin-bottom: var(--spacing-lg);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-orange);
+  margin-bottom: var(--spacing-md);
   font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  max-width: 900px;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.hero-quote em {
+  font-style: italic;
+  color: var(--color-blue);
+  /* Adding a color shift for the emphasized part to make it stand out more */
 }
 
 .hero-actions {
