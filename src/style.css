@@ -155,20 +155,17 @@ ul {
 
 .hero-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: var(--spacing-xl);
-}
-
-.hero-content {
-  flex: 1;
-  text-align: left;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  text-align: center;
 }
 
 .hero-image {
-  flex: 1;
   display: flex;
   justify-content: center;
+  margin-bottom: var(--spacing-md);
 }
 
 .hero-image img {
@@ -176,42 +173,22 @@ ul {
   height: auto;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-lg);
-}
-
-.sub-hero {
-  color: var(--color-blue);
-  font-size: 1.5rem;
-  margin-bottom: var(--spacing-sm);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.main-title {
-  font-size: 4rem;
-  color: var(--color-orange);
-  margin-bottom: var(--spacing-sm);
-  text-transform: uppercase;
-  line-height: 1.1;
-}
-
-.tagline {
-  font-size: 1.8rem;
-  color: var(--color-text-light);
-  margin-bottom: var(--spacing-lg);
-  font-weight: 300;
+  max-height: 500px;
+  /* Limit height to prevent it from being too huge */
 }
 
 .hero-quote {
   font-size: 1.5rem;
   font-style: italic;
   color: var(--color-text-dark);
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
   font-family: var(--font-heading);
 }
 
 .hero-actions {
   display: flex;
   gap: var(--spacing-md);
+  justify-content: center;
 }
 
 .btn-secondary {
@@ -304,6 +281,22 @@ ul {
   letter-spacing: 1px;
 }
 
+.host-images {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.host-images img {
+  max-width: 45%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  object-fit: cover;
+}
+
 /* Guests */
 .guests-grid {
   display: grid;
@@ -326,6 +319,43 @@ ul {
 
 .guest-card:hover {
   transform: translateY(-5px);
+}
+
+.guest-image-wrapper {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto var(--spacing-md);
+  border: 3px solid var(--color-yellow);
+  overflow: hidden;
+}
+
+.guest-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.guest-lisa {
+  object-position: top center;
+}
+
+.guest-andre {
+  object-position: 25% top;
+}
+
+.guest-dave {
+  object-position: top center;
+}
+
+.guest-joe {
+  object-position: top center;
+}
+
+.guest-jj {
+  transform: scale(1.15);
+  transform-origin: top center;
 }
 
 /* Partners */
