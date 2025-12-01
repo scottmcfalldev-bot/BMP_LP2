@@ -14,9 +14,9 @@
   --font-body: 'Roboto', sans-serif;
 
   --spacing-sm: 0.5rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 2rem;
-  --spacing-xl: 4rem;
+  --spacing-md: 0.75rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2.5rem;
 
   --border-radius: 8px;
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -149,7 +149,7 @@ ul {
 /* Hero */
 .hero {
   background: linear-gradient(135deg, #fff5f2 0%, #ffffff 100%);
-  padding: 6rem 0;
+  padding: 3rem 0;
   overflow: hidden;
 }
 
@@ -178,10 +178,10 @@ ul {
 }
 
 .hero-quote {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 800;
   color: var(--color-orange);
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
   font-family: var(--font-heading);
   text-transform: uppercase;
   letter-spacing: -1px;
@@ -208,12 +208,12 @@ ul {
 
 /* Sections */
 .section {
-  padding: var(--spacing-xl) 0;
+  padding: 2rem 0;
 }
 
 .section-header {
   text-align: center;
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
 }
 
 .section-header .icon {
@@ -223,7 +223,7 @@ ul {
 }
 
 .section-header h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--color-blue);
 }
 
@@ -312,12 +312,12 @@ ul {
 .guests-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--spacing-lg);
+  gap: var(--spacing-md);
 }
 
 .guest-card {
   background: var(--color-white);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-md);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-md);
   text-align: center;
@@ -333,10 +333,10 @@ ul {
 }
 
 .guest-image-wrapper {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  margin: 0 auto var(--spacing-md);
+  margin: 0 auto var(--spacing-sm);
   border: 3px solid var(--color-yellow);
   overflow: hidden;
 }
@@ -414,13 +414,13 @@ ul {
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: var(--spacing-lg);
-  margin-bottom: var(--spacing-xl);
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
 }
 
 .stat-card {
   background: var(--color-white);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-md);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-sm);
   text-align: center;
@@ -429,7 +429,7 @@ ul {
 
 .stat-value {
   display: block;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--color-red);
   margin-bottom: var(--spacing-sm);
@@ -450,21 +450,21 @@ ul {
 
 .top-episodes {
   background: var(--color-bg-light);
-  padding: var(--spacing-xl);
+  padding: var(--spacing-lg);
   border-radius: var(--border-radius);
-  margin: var(--spacing-xl) auto 0;
+  margin: var(--spacing-lg) auto 0;
 }
 
 .top-episodes h3 {
   text-align: center;
   color: var(--color-red);
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
 }
 
 .episodes-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--spacing-lg);
+  gap: var(--spacing-md);
 }
 
 .episode-card {
@@ -496,11 +496,11 @@ ul {
 }
 
 .episode-title {
-  padding: var(--spacing-md);
+  padding: var(--spacing-sm);
   text-align: center;
   font-weight: 600;
   color: var(--color-text-dark);
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 /* Instagram */
@@ -522,8 +522,8 @@ ul {
 .audience-details {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--spacing-lg);
-  margin-bottom: var(--spacing-xl);
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
 }
 
 .audience-item {
