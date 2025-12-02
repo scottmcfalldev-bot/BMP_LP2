@@ -252,7 +252,7 @@ ul {
 }
 
 .overview .section-header {
-  text-align: left;
+  text-align: center;
   margin-bottom: var(--spacing-md);
 }
 
@@ -581,13 +581,26 @@ ul {
 .social-links {
   display: flex;
   justify-content: center;
-  gap: var(--spacing-md);
+  gap: var(--spacing-lg);
   margin-top: var(--spacing-md);
 }
 
-.social-links span {
-  font-weight: 700;
-  font-size: 1.2rem;
+.social-links a {
+  color: var(--color-orange);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links a:hover {
+  color: var(--color-light-orange);
+  transform: scale(1.1);
+}
+
+.social-links svg {
+  width: 32px;
+  height: 32px;
 }
 
 /* Footer */
